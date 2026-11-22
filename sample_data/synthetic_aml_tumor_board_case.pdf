@@ -1,0 +1,239 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 6054 >>
+stream
+BT 0.45 0.50 0.58 rg /F1 7.5 Tf 45.0 762.0 Td (SYNTHETIC DEMO CASE ? INTERNATIONAL PEDIATRIC LEUKEMIA TUMOR BOARD \(NO PHI\)) Tj ET
+0.82 0.85 0.90 RG 0.6 w 45.0 756.0 m 567.0 756.0 l S
+0.82 0.85 0.90 RG 0.6 w 45.0 44.0 m 567.0 44.0 l S
+BT 0.45 0.50 0.58 rg /F1 7.5 Tf 45.0 30.0 Td (CONFIDENTIAL RESEARCH DEMONSTRATION ? FICTIONAL PATIENT RECORD) Tj ET
+BT 0.45 0.50 0.58 rg /F1 7.5 Tf 510.0 30.0 Td (Page 1 of 2) Tj ET
+BT 0.10 0.35 0.75 rg /F2 14 Tf 45.0 728.0 Td (MOLECULAR TUMOR BOARD ? COMPLEX PATIENT CASE DOSSIER) Tj ET
+BT 0.30 0.35 0.45 rg /F1 9.5 Tf 45.0 710.0 Td (Case ID: MTB-SYNTH-2026-001   |   Patient: 15-year-old Male \(Synthetic\)   |   Date: Nov 2026) Tj ET
+BT 0.10 0.12 0.18 rg /F2 11.5 Tf 45.0 684.0 Td (1. Clinical Summary & Prior Treatment History) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 666.0 Td (Diagnosis: Relapsed/Refractory CNS-negative M5 Acute Myeloid Leukemia \(2nd Relapse\).) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 651.0 Td (Initial Presentation \(Sep 2022\): Diagnosed with FLT3-ITD and t\(6;10\) KMT2A-AF6 fusion M5 AML.) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 636.0 Td (Line 1: Treated per NOPHO DBH AML 2012 protocol; achieved complete remission \(CR\) after induction) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 621.0 Td (        but experienced 1st relapse during consolidation phase.) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 606.0 Td (Line 2: Enrolled in Quizartinib study due to FLT3-ITD mutation; developed progressive disease after 1 cycle.) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 591.0 Td (Line 3: Salvage FLA-Mylotarg followed by Matched Unrelated Donor Allogeneic HSCT \(MUD HSCT\).) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 576.0 Td (        Maintained 6 months remission; no active GVHD \(>6 months post-HSCT\).) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 561.0 Td (Line 4 \(2nd Relapse\): Treated with Venetoclax + Azacytidine for 2 courses; persistent marrow disease.) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 546.0 Td (Current Status: Good clinical condition \(ECOG 0 / Lansky 90\). Seeking targeted experimental therapy) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.2 Tf 48.0 531.0 Td (                or recruiting clinical trials addressing dual KMT2A-AF6 + FLT3-ITD drivers and CD markers.) Tj ET
+BT 0.10 0.12 0.18 rg /F2 11.5 Tf 45.0 498.0 Td (2. Table 1 ? Current Hematology, Bone Marrow & Organ Function Panel) Tj ET
+0.91 0.94 0.99 rg 0.70 0.75 0.82 RG 0.6 w 45.0 466.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 50.0 474.0 Td (Parameter) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 488.0 m 190.0 466.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 195.0 474.0 Td (Result) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 488.0 m 305.0 466.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 310.0 474.0 Td (Reference Range) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 488.0 m 425.0 466.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 430.0 474.0 Td (Clinical Interpretation) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 444.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 452.0 Td (Bone Marrow Blasts) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 466.0 m 190.0 444.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 195.0 452.0 Td (50%) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 466.0 m 305.0 444.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 310.0 452.0 Td (< 5%) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 466.0 m 425.0 444.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 430.0 452.0 Td (Refractory / 2nd Relapse AML) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 422.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 430.0 Td (Peripheral Blood Blasts) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 444.0 m 190.0 422.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 195.0 430.0 Td (4%) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 444.0 m 305.0 422.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 310.0 430.0 Td (0%) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 444.0 m 425.0 422.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 430.0 430.0 Td (Circulating myeloblasts present) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 400.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 408.0 Td (WBC / ANC / Platelets) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 422.0 m 190.0 400.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 195.0 408.0 Td (6.2 / 1.4 / 78 K/uL) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 422.0 m 305.0 400.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 310.0 408.0 Td (4.5-11 / >1.5 / 150-400) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 422.0 m 425.0 400.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 430.0 408.0 Td (Mild thrombocytopenia) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 378.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 386.0 Td (LVEF \(Echocardiogram\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 400.0 m 190.0 378.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 195.0 386.0 Td (62%) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 400.0 m 305.0 378.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 310.0 386.0 Td (>= 55%) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 400.0 m 425.0 378.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 430.0 386.0 Td (Adequate cardiac function for trials) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 356.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 364.0 Td (eGFR \(Renal\) / Bilirubin) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 378.0 m 190.0 356.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 195.0 364.0 Td (108 mL/min / 0.7 mg/dL) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 378.0 m 305.0 356.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 310.0 364.0 Td (> 60 / < 1.2 mg/dL) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 378.0 m 425.0 356.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 430.0 364.0 Td (Normal renal & hepatic function) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 334.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 342.0 Td (Active GVHD / CNS Disease) Tj ET
+0.75 0.79 0.85 RG 0.6 w 190.0 356.0 m 190.0 334.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 195.0 342.0 Td (None / CNS-negative) Tj ET
+0.75 0.79 0.85 RG 0.6 w 305.0 356.0 m 305.0 334.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 310.0 342.0 Td (Absent) Tj ET
+0.75 0.79 0.85 RG 0.6 w 425.0 356.0 m 425.0 334.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 430.0 342.0 Td (Eligible for post-HSCT protocols) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 8740 >>
+stream
+BT 0.45 0.50 0.58 rg /F1 7.5 Tf 45.0 762.0 Td (SYNTHETIC DEMO CASE ? INTERNATIONAL PEDIATRIC LEUKEMIA TUMOR BOARD \(NO PHI\)) Tj ET
+0.82 0.85 0.90 RG 0.6 w 45.0 756.0 m 567.0 756.0 l S
+0.82 0.85 0.90 RG 0.6 w 45.0 44.0 m 567.0 44.0 l S
+BT 0.45 0.50 0.58 rg /F1 7.5 Tf 45.0 30.0 Td (CONFIDENTIAL RESEARCH DEMONSTRATION ? FICTIONAL PATIENT RECORD) Tj ET
+BT 0.45 0.50 0.58 rg /F1 7.5 Tf 510.0 30.0 Td (Page 2 of 2) Tj ET
+BT 0.10 0.12 0.18 rg /F2 11.5 Tf 45.0 728.0 Td (3. Table 2 ? Molecular NGS & Cytogenetics Panel \(2nd Relapse Marrow\)) Tj ET
+0.91 0.94 0.99 rg 0.70 0.75 0.82 RG 0.6 w 45.0 696.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 50.0 704.0 Td (Assay / Target) Tj ET
+0.75 0.79 0.85 RG 0.6 w 170.0 718.0 m 170.0 696.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 175.0 704.0 Td (Status) Tj ET
+0.75 0.79 0.85 RG 0.6 w 245.0 718.0 m 245.0 696.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 250.0 704.0 Td (Variant / Detail) Tj ET
+0.75 0.79 0.85 RG 0.6 w 410.0 718.0 m 410.0 696.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 415.0 704.0 Td (Actionability) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 674.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 682.0 Td (Cytogenetics / FISH) Tj ET
+0.75 0.79 0.85 RG 0.6 w 170.0 696.0 m 170.0 674.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 175.0 682.0 Td (POSITIVE) Tj ET
+0.75 0.79 0.85 RG 0.6 w 245.0 696.0 m 245.0 674.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 250.0 682.0 Td (t\(6;10\)\(q27;p12\) KMT2A-AF6 fusion) Tj ET
+0.75 0.79 0.85 RG 0.6 w 410.0 696.0 m 410.0 674.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 415.0 682.0 Td (High-risk; Menin inhibitor target) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 652.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 660.0 Td (NGS ? FLT3) Tj ET
+0.75 0.79 0.85 RG 0.6 w 170.0 674.0 m 170.0 652.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 175.0 660.0 Td (POSITIVE) Tj ET
+0.75 0.79 0.85 RG 0.6 w 245.0 674.0 m 245.0 652.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 250.0 660.0 Td (FLT3-ITD \(confirmed on relapse\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 410.0 674.0 m 410.0 652.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 415.0 660.0 Td (Prior Quizartinib progression; Type I/II TKI) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 630.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 638.0 Td (NGS ? NPM1 / IDH1 / IDH2) Tj ET
+0.75 0.79 0.85 RG 0.6 w 170.0 652.0 m 170.0 630.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 175.0 638.0 Td (NEGATIVE) Tj ET
+0.75 0.79 0.85 RG 0.6 w 245.0 652.0 m 245.0 630.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 250.0 638.0 Td (Wild-type) Tj ET
+0.75 0.79 0.85 RG 0.6 w 410.0 652.0 m 410.0 630.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 415.0 638.0 Td (Not targetable) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 608.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 616.0 Td (NGS ? TP53) Tj ET
+0.75 0.79 0.85 RG 0.6 w 170.0 630.0 m 170.0 608.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 175.0 616.0 Td (NEGATIVE) Tj ET
+0.75 0.79 0.85 RG 0.6 w 245.0 630.0 m 245.0 608.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 250.0 616.0 Td (Wild-type) Tj ET
+0.75 0.79 0.85 RG 0.6 w 410.0 630.0 m 410.0 608.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 415.0 616.0 Td (Favorable for BCL-2 / XPO1 combos) Tj ET
+BT 0.10 0.12 0.18 rg /F2 11.5 Tf 45.0 584.0 Td (4. Table 3 ? Flow Cytometry / Immunophenotyping \(1st Relapse; 2nd Relapse QNS\)) Tj ET
+0.91 0.94 0.99 rg 0.70 0.75 0.82 RG 0.6 w 45.0 552.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 50.0 560.0 Td (Surface Marker) Tj ET
+0.75 0.79 0.85 RG 0.6 w 155.0 574.0 m 155.0 552.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 160.0 560.0 Td (Expression) Tj ET
+0.75 0.79 0.85 RG 0.6 w 260.0 574.0 m 260.0 552.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 265.0 560.0 Td (Subpopulations) Tj ET
+0.75 0.79 0.85 RG 0.6 w 405.0 574.0 m 405.0 552.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 410.0 560.0 Td (Immunotherapy Relevance) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 530.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 538.0 Td (CD33) Tj ET
+0.75 0.79 0.85 RG 0.6 w 155.0 552.0 m 155.0 530.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 160.0 538.0 Td (POSITIVE \(Bright\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 260.0 552.0 m 260.0 530.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 265.0 538.0 Td (2 blast populations) Tj ET
+0.75 0.79 0.85 RG 0.6 w 405.0 552.0 m 405.0 530.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 410.0 538.0 Td (Prior Mylotarg; ADC / CAR-T option) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 508.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 516.0 Td (CD38) Tj ET
+0.75 0.79 0.85 RG 0.6 w 155.0 530.0 m 155.0 508.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 160.0 516.0 Td (POSITIVE) Tj ET
+0.75 0.79 0.85 RG 0.6 w 260.0 530.0 m 260.0 508.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 265.0 516.0 Td (2 blast populations) Tj ET
+0.75 0.79 0.85 RG 0.6 w 405.0 530.0 m 405.0 508.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 410.0 516.0 Td (Daratumumab / anti-CD38 candidate) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 486.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 494.0 Td (CD123) Tj ET
+0.75 0.79 0.85 RG 0.6 w 155.0 508.0 m 155.0 486.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 160.0 494.0 Td (POSITIVE / WEAK) Tj ET
+0.75 0.79 0.85 RG 0.6 w 260.0 508.0 m 260.0 486.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 265.0 494.0 Td (Pop 1: Positive; Pop 2: Weak) Tj ET
+0.75 0.79 0.85 RG 0.6 w 405.0 508.0 m 405.0 486.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 410.0 494.0 Td (Tagraxofusp / Pivekimab / CD123 CAR-T) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 464.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 472.0 Td (CD34 / HLA-DR) Tj ET
+0.75 0.79 0.85 RG 0.6 w 155.0 486.0 m 155.0 464.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 160.0 472.0 Td (CD34- / HLA-DR+) Tj ET
+0.75 0.79 0.85 RG 0.6 w 260.0 486.0 m 260.0 464.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 265.0 472.0 Td (Monocytic M5 phenotype) Tj ET
+0.75 0.79 0.85 RG 0.6 w 405.0 486.0 m 405.0 464.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 410.0 472.0 Td (Consistent with M5 AML) Tj ET
+BT 0.10 0.12 0.18 rg /F2 11.5 Tf 45.0 440.0 Td (5. Table 4 ? Ex-Vivo Drug Response Profiling \(DRP ? Zurich\)) Tj ET
+0.91 0.94 0.99 rg 0.70 0.75 0.82 RG 0.6 w 45.0 408.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 50.0 416.0 Td (Drug / Combination) Tj ET
+0.75 0.79 0.85 RG 0.6 w 205.0 430.0 m 205.0 408.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 210.0 416.0 Td (Ex-Vivo Sensitivity) Tj ET
+0.75 0.79 0.85 RG 0.6 w 335.0 430.0 m 335.0 408.0 l S
+BT 0.10 0.12 0.18 rg /F2 8.5 Tf 340.0 416.0 Td (Notes for Tumor Board) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 386.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 394.0 Td (Selinexor + Venetoclax) Tj ET
+0.75 0.79 0.85 RG 0.6 w 205.0 408.0 m 205.0 386.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 210.0 394.0 Td (SENSITIVE \(Synergistic\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 335.0 408.0 m 335.0 386.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 340.0 394.0 Td (Strong blast killing despite prior Ven+Aza) Tj ET
+0.98 0.99 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 364.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 372.0 Td (Revumenib \(Menin Inhibitor\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 205.0 386.0 m 205.0 364.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 210.0 372.0 Td (RATIONALE \(KMT2A-AF6\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 335.0 386.0 m 335.0 364.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 340.0 372.0 Td (Evaluate Menin + Venetoclax / FLT3i trials) Tj ET
+1.00 1.00 1.00 rg 0.70 0.75 0.82 RG 0.6 w 45.0 342.0 522.0 22.0 re B
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 50.0 350.0 Td (Quizartinib \(Monotherapy\)) Tj ET
+0.75 0.79 0.85 RG 0.6 w 205.0 364.0 m 205.0 342.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 210.0 350.0 Td (RESISTANT) Tj ET
+0.75 0.79 0.85 RG 0.6 w 335.0 364.0 m 335.0 342.0 l S
+BT 0.10 0.12 0.18 rg /F1 8.5 Tf 340.0 350.0 Td (Clinical progression after 1 cycle) Tj ET
+BT 0.10 0.12 0.18 rg /F2 11.5 Tf 45.0 316.0 Td (6. Tumor Board Questions for Literature & Clinical Trial Intelligence) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.0 Tf 48.0 298.0 Td (1. Identify highest-evidence PubMed studies & clinical case reports for pediatric relapsed KMT2A-AF6 + FLT3-ITD AML.) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.0 Tf 48.0 283.0 Td (2. Identify actively recruiting pediatric/AYA clinical trials \(age 15 eligible, post-HSCT permitted\) for:) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.0 Tf 48.0 268.0 Td (   \(a\) Menin inhibitors \(e.g., Revumenib\) alone or in combination with Venetoclax / FLT3 inhibitors,) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.0 Tf 48.0 253.0 Td (   \(b\) Selinexor + Venetoclax combinations concordant with Zurich DRP,) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.0 Tf 48.0 238.0 Td (   \(c\) CD123 / CD33 / CD38-directed immunotherapies.) Tj ET
+BT 0.10 0.12 0.18 rg /F1 9.0 Tf 48.0 223.0 Td (3. Emphasize single agents or combinations targeting MULTIPLE actionable events simultaneously.) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000402 00000 n 
+0000006508 00000 n 
+0000006644 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+15436
+%%EOF

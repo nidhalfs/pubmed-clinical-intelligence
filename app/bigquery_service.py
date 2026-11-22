@@ -87,7 +87,7 @@ class BigQueryClinicalService:
     job.result()
     telemetry.append(self._extract_telemetry(job, f"AI.PARSE_DOCUMENT + AI.CHUNK_DOCUMENT ({gcs_uri.split('/')[-1]})"))
 
-    # Fetch parsed HTML tables & clean text + chunks for this document
+    # Fetch parsed HTML tables & clean text + chunks for this document (uncorrelated)
     fetch_sql = f"""
     SELECT
       p.gcs_uri,
@@ -96,7 +96,7 @@ class BigQueryClinicalService:
       ARRAY(
         SELECT AS STRUCT chunk_id, start_page, end_page, content
         FROM `{self.project_id}.{self.dataset_id}.patient_case_chunks` c
-        WHERE c.case_id = p.case_id AND c.gcs_uri = p.gcs_uri
+        WHERE c.case_id = @case_id AND c.gcs_uri = @gcs_uri
         ORDER BY chunk_id
       ) AS chunks
     FROM `{self.project_id}.{self.dataset_id}.patient_case_parsed_docs` p

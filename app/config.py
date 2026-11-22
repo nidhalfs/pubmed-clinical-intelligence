@@ -18,8 +18,9 @@ class Settings:
   )
   patient_docs_bucket: str = os.environ.get("PATIENT_DOCS_BUCKET", "")
   private_pdfs_bucket: str = os.environ.get("PRIVATE_PDFS_BUCKET", "")
-  gemini_model: str = os.environ.get("GEMINI_MODEL", "gemini-2.5-pro")
-  gemini_fast_model: str = os.environ.get("GEMINI_FAST_MODEL", "gemini-2.5-flash")
+  vertex_location: str = os.environ.get("VERTEX_LOCATION", "global")
+  gemini_model: str = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
+  gemini_fast_model: str = os.environ.get("GEMINI_FAST_MODEL", "gemini-3.8-flash")
   demo_mode: bool = os.environ.get("DEMO_MODE", "false").lower() == "true"
 
 

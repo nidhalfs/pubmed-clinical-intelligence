@@ -81,7 +81,7 @@ def _get_genai_client() -> Any:
   return genai.Client(
       vertexai=True,
       project=settings.gcp_project_id,
-      location=settings.gcp_region,
+      location=settings.vertex_location,
   )
 
 

@@ -17,6 +17,10 @@
 --    transparent evidence benchmarking.
 -- ============================================================================
 
+-- Ensure dataset exists in the target location (idempotent)
+CREATE SCHEMA IF NOT EXISTS `${GCP_PROJECT_ID}.${BQ_DATASET_ID}`
+OPTIONS (location = '${BQ_LOCATION}');
+
 -- 1. HOT SEARCH TABLE (Lean metadata + embedding, NO full article_text)
 CREATE TABLE IF NOT EXISTS `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.pubmed_search_index` (
   pmc_id STRING NOT NULL,

@@ -29,10 +29,15 @@ ARTIFACT_REPO="$(terraform output -raw artifact_registry_repo)"
 popd >/dev/null
 
 echo "==> [2/5] Initializing Optimized BigQuery AI tables & stored procedures..."
+# Ensure dataset exists in the target project & location (idempotent safety check)
+bq --project_id="${GCP_PROJECT_ID}" show --dataset "${GCP_PROJECT_ID}:${BQ_DATASET_ID}" >/dev/null 2>&1 || \
+  bq --project_id="${GCP_PROJECT_ID}" mk --location="${BQ_LOCATION}" --dataset "${GCP_PROJECT_ID}:${BQ_DATASET_ID}"
+
 run_bq_sql() {
   local sql_file="$1"
   echo "    Running ${sql_file}..."
   GCP_PROJECT_ID="${GCP_PROJECT_ID}" \
+  BQ_LOCATION="${BQ_LOCATION}" \
   BQ_DATASET_ID="${BQ_DATASET_ID}" \
   BQ_CONNECTION_ID="${BQ_CONNECTION_ID}" \
   PRIVATE_PDFS_BUCKET="${PRIVATE_PDFS_BUCKET}" \

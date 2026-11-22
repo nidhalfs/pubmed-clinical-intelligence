@@ -82,6 +82,7 @@ resource "google_storage_bucket" "private_pdfs" {
 
 # 4. BigQuery Dataset (Optimized PubMed + ClinicalTrials + Patient Case Intelligence)
 resource "google_bigquery_dataset" "clinical_intelligence" {
+  project     = var.project_id
   dataset_id  = var.dataset_id
   location    = var.bq_location
   description = "Optimized PubMed & ClinicalTrials vector/hybrid search layer + AI.PARSE_DOCUMENT / AI.CHUNK_DOCUMENT patient case intelligence"
@@ -90,6 +91,7 @@ resource "google_bigquery_dataset" "clinical_intelligence" {
 
 # 5. BigQuery Cloud Resource Connection (used by AI.PARSE_DOCUMENT, AI.CHUNK_DOCUMENT, AI.EMBED, AI.GENERATE)
 resource "google_bigquery_connection" "vertex_docai_conn" {
+  project       = var.project_id
   connection_id = var.bq_connection_id
   location      = var.bq_location
   description   = "Cloud Resource connection for BigQuery AI Document Intelligence and Vertex AI models"

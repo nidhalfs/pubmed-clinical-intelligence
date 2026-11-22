@@ -316,7 +316,15 @@ class ClinicalCaseOrchestrator:
       parts.append(f"### Document: {fname}")
       clean_text = (doc.get("clean_text_without_boilerplate") or "")[:15000]
       if clean_text:
-        parts.append(clean_text)
+        parts.append("#### Parsed Layout Text (AI.PARSE_DOCUMENT):\n" + clean_text)
+      chunks = doc.get("chunks") or []
+      if chunks:
+        parts.append("#### Layout-Aware Semantic Chunks (AI.CHUNK_DOCUMENT):")
+        for ch in chunks[:20]:
+          sp = ch.get("start_page", "?")
+          ep = ch.get("end_page", sp)
+          page_lbl = f"Page {sp}" if sp == ep else f"Pages {sp}-{ep}"
+          parts.append(f"[{fname} | {page_lbl} | Chunk {ch.get('chunk_id', '?')}]\n{ch.get('content', '')}")
       tables = doc.get("extracted_tables") or []
       if tables:
         parts.append("#### Extracted Structured Tables (HTML):")

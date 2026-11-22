@@ -21,6 +21,17 @@ CREATE OR REPLACE PROCEDURE `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.sp_search_pubmed
   in_top_k INT64                     -- e.g., 15
 )
 BEGIN
+  DECLARE clean_lexical_terms STRING DEFAULT (
+    SELECT ARRAY_TO_STRING(
+      ARRAY_SLICE(
+        SPLIT(TRIM(REGEXP_REPLACE(IFNULL(in_lexical_biomarkers, ''), r'[^a-zA-Z0-9]+', ' ')), ' '),
+        0,
+        3
+      ),
+      ' '
+    )
+  );
+
   WITH query_vec AS (
     SELECT AI.EMBED(
       in_semantic_query,
@@ -69,9 +80,8 @@ BEGIN
       ROW_NUMBER() OVER (ORDER BY pub_year DESC) AS lex_rank
     FROM `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.pubmed_search_index`
     WHERE pub_year >= in_min_pub_year
-      AND in_lexical_biomarkers IS NOT NULL
-      AND LENGTH(TRIM(in_lexical_biomarkers)) > 0
-      AND SEARCH((title, abstract_snippet), in_lexical_biomarkers)
+      AND LENGTH(IFNULL(clean_lexical_terms, '')) > 0
+      AND SEARCH((title, abstract_snippet), clean_lexical_terms)
     LIMIT 60
   ),
   -- Stage 1C: Reciprocal Rank Fusion (RRF) + Journal Impact Enrichment
@@ -143,6 +153,17 @@ CREATE OR REPLACE PROCEDURE `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.sp_search_clinic
   in_top_k INT64
 )
 BEGIN
+  DECLARE clean_lexical_terms STRING DEFAULT (
+    SELECT ARRAY_TO_STRING(
+      ARRAY_SLICE(
+        SPLIT(TRIM(REGEXP_REPLACE(IFNULL(in_lexical_biomarkers, ''), r'[^a-zA-Z0-9]+', ' ')), ' '),
+        0,
+        3
+      ),
+      ' '
+    )
+  );
+
   WITH semantic_trials AS (
     SELECT
       base.nct_id,
@@ -198,9 +219,8 @@ BEGIN
         NOT in_recruiting_only
         OR overall_status IN ('RECRUITING', 'NOT_YET_RECRUITING', 'ENROLLING_BY_INVITATION')
       )
-      AND in_lexical_biomarkers IS NOT NULL
-      AND LENGTH(TRIM(in_lexical_biomarkers)) > 0
-      AND SEARCH((brief_title, conditions_text, interventions_text, eligibility_criteria), in_lexical_biomarkers)
+      AND LENGTH(IFNULL(clean_lexical_terms, '')) > 0
+      AND SEARCH((brief_title, conditions_text, interventions_text, eligibility_criteria), clean_lexical_terms)
     LIMIT 40
   )
   SELECT

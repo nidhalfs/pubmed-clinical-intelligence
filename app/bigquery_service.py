@@ -185,13 +185,13 @@ class BigQueryClinicalService:
       base.content,
       distance
     FROM AI.SEARCH(
-      `{self.project_id}.{self.dataset_id}.private_medical_chunks`,
+      TABLE `{self.project_id}.{self.dataset_id}.private_medical_chunks`,
       'content',
       @semantic_query,
-      top_k => @top_k,
-      mode => 'AUTO'
+      top_k => 10
     )
-    ORDER BY distance ASC;
+    ORDER BY distance ASC
+    LIMIT @top_k;
     """
     job_config = bigquery.QueryJobConfig(
         query_parameters=[

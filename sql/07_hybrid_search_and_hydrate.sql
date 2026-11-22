@@ -143,16 +143,7 @@ CREATE OR REPLACE PROCEDURE `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.sp_search_clinic
   in_top_k INT64
 )
 BEGIN
-  WITH status_filtered AS (
-    SELECT *
-    FROM `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.clinical_trials`
-    WHERE (
-      NOT in_recruiting_only
-      OR overall_status IN ('RECRUITING', 'NOT_YET_RECRUITING', 'ENROLLING_BY_INVITATION')
-    )
-  ),
-  -- Native AI.SEARCH (hybrid vector + lexical + optional rerank when autonomous embeddings exist)
-  semantic_trials AS (
+  WITH semantic_trials AS (
     SELECT
       base.nct_id,
       base.brief_title,
@@ -173,11 +164,14 @@ BEGIN
       distance,
       ROW_NUMBER() OVER (ORDER BY distance ASC) AS sem_rank
     FROM AI.SEARCH(
-      (SELECT * FROM status_filtered),
+      TABLE `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.clinical_trials`,
       'searchable_text',
       in_semantic_query,
-      top_k => 40,
-      mode => 'AUTO'
+      top_k => 60
+    )
+    WHERE (
+      NOT in_recruiting_only
+      OR base.overall_status IN ('RECRUITING', 'NOT_YET_RECRUITING', 'ENROLLING_BY_INVITATION')
     )
   ),
   lexical_trials AS (
@@ -199,8 +193,12 @@ BEGIN
       study_url,
       last_update_date,
       ROW_NUMBER() OVER (ORDER BY last_update_date DESC) AS lex_rank
-    FROM status_filtered
-    WHERE in_lexical_biomarkers IS NOT NULL
+    FROM `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.clinical_trials`
+    WHERE (
+        NOT in_recruiting_only
+        OR overall_status IN ('RECRUITING', 'NOT_YET_RECRUITING', 'ENROLLING_BY_INVITATION')
+      )
+      AND in_lexical_biomarkers IS NOT NULL
       AND LENGTH(TRIM(in_lexical_biomarkers)) > 0
       AND SEARCH((brief_title, conditions_text, interventions_text, eligibility_criteria), in_lexical_biomarkers)
     LIMIT 40

@@ -84,7 +84,7 @@ else
   for role in roles/documentai.editor roles/aiplatform.user roles/storage.objectViewer; do
     gcloud projects add-iam-policy-binding "${GCP_PROJECT_ID}" \
       --member="serviceAccount:${BQ_CONN_SA}" \
-      --role="${role}" --quiet >/dev/null
+      --role="${role}" --condition=None --quiet >/dev/null
   done
 
   # Dedicated App & Sync Job Service Account
@@ -96,7 +96,7 @@ else
   for role in roles/bigquery.jobUser roles/bigquery.dataEditor roles/bigquery.connectionUser roles/aiplatform.user roles/documentai.editor roles/storage.objectAdmin; do
     gcloud projects add-iam-policy-binding "${GCP_PROJECT_ID}" \
       --member="serviceAccount:${APP_SA_EMAIL}" \
-      --role="${role}" --quiet >/dev/null
+      --role="${role}" --condition=None --quiet >/dev/null
   done
 
   echo "    Waiting 10s for IAM & BigQuery Connection propagation..."
@@ -119,7 +119,9 @@ run_bq_sql() {
 }
 
 run_bq_sql sql/01_pubmed_optimized_tables.sql
-run_bq_sql sql/03_pubmed_incremental_sync.sql
+if [ "${SKIP_PUBMED_SYNC:-false}" != "true" ]; then
+  run_bq_sql sql/03_pubmed_incremental_sync.sql
+fi
 run_bq_sql sql/02_pubmed_indexes.sql
 run_bq_sql sql/04_clinical_trials_schema.sql
 run_bq_sql sql/05_patient_case_doc_intelligence.sql

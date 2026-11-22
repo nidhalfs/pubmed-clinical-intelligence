@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinical Case Intelligence — BigQuery AI PubMed &amp; ClinicalTrials</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-dot"></div>
+      <div>
+        <h1>Clinical Case Intelligence</h1>
+        <p class="subtitle">BigQuery AI Document Intelligence (<code>AI.PARSE_DOCUMENT</code> / <code>AI.CHUNK_DOCUMENT</code>) + Zero-Full-Scan PubMed &amp; ClinicalTrials Hybrid Search</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="demoBtn" class="btn btn-secondary" type="button">Load Tumor Board Demo</button>
+      <button id="downloadMdBtn" class="btn btn-outline hidden" type="button">Export Report (.md)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card submission-card">
+      <h2>1. Submit Patient Case &amp; Clinical Documents</h2>
+      <p class="hint">
+        Attach multi-page PDFs, DOCX, or PPTX files (NGS panels, pathology reports, flow cytometry, discharge summaries).
+        BigQuery parses structured tables &amp; strips boilerplate via <code>AI.PARSE_DOCUMENT</code> and chunks narratives via <code>AI.CHUNK_DOCUMENT</code>.
+      </p>
+
+      <form id="caseForm">
+        <div class="form-group">
+          <label for="clinicalNotes">Clinical Case Summary / Tumor Board Question</label>
+          <textarea id="clinicalNotes" rows="5" required
+            placeholder="e.g. 15-year-old male with 2nd relapse FLT3-ITD, KMT2A-AF6 M5 AML post-MUD HSCT, CD33+/CD38+/CD123+..."></textarea>
+        </div>
+
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="fileInput" multiple accept=".pdf,.docx,.pptx,.html" />
+          <div class="upload-copy">
+            <strong>Drop patient documents here</strong> or click to browse (PDF, DOCX, PPTX — up to 130 pages/file)
+          </div>
+          <div id="fileList" class="file-list"></div>
+        </div>
+
+        <div class="controls-grid">
+          <label class="control-item">
+            <span>Min Publication Year (Partition Pruning)</span>
+            <input type="number" id="minPubYear" value="2018" min="1950" max="2026" />
+          </label>
+          <label class="control-item checkbox-item">
+            <input type="checkbox" id="recruitingOnly" checked />
+            <span>Recruiting / Active Clinical Trials Only (Cluster Pruning)</span>
+          </label>
+          <label class="control-item checkbox-item">
+            <input type="checkbox" id="includePrivatePdfs" />
+            <span>Include Customer Private Institutional PDFs</span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button id="submitBtn" class="btn btn-primary" type="submit">Analyze Case &amp; Generate Benchmarked Report</button>
+          <span id="statusMsg" class="status-msg"></span>
+        </div>
+      </form>
+    </section>
+
+    <div id="resultsContainer" class="hidden">
+      <!-- Efficiency Telemetry Banner -->
+      <section class="telemetry-banner" id="telemetryBanner"></section>
+
+      <!-- Structured Patient Profile -->
+      <section class="card" id="profileSection">
+        <h2>2. Structured Patient Profile &amp; Document Grounding</h2>
+        <div id="profileContent"></div>
+      </section>
+
+      <!-- Clinical Executive Synthesis -->
+      <section class="card" id="synthesisSection">
+        <h2>3. Clinical Synthesis &amp; Multi-Target Rationale</h2>
+        <div id="synthesisContent" class="markdown-body"></div>
+      </section>
+
+      <!-- Benchmarked PubMed Literature -->
+      <section class="card" id="pubmedSection">
+        <h2>4. Benchmarked PubMed Literature &amp; Relevant Case Studies</h2>
+        <div id="pubmedContent"></div>
+      </section>
+
+      <!-- Benchmarked Clinical Trials -->
+      <section class="card" id="trialsSection">
+        <h2>5. Benchmarked Clinical Trials &amp; Eligibility Pre-Check</h2>
+        <div id="trialsContent"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    For medical research and educational decision-support only. Not autonomous medical advice. Always verify primary PMID/PMC/NCT sources.
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

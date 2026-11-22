@@ -50,7 +50,7 @@ BEGIN
       ),
       'embedding',
       (SELECT q_embedding FROM query_vec),
-      top_k => GREATEST(in_top_k * 3, 40),
+      top_k => 50,
       distance_type => 'COSINE'
     )
   ),
@@ -110,8 +110,7 @@ BEGIN
     FROM fused f
     LEFT JOIN `${GCP_PROJECT_ID}.${BQ_DATASET_ID}.journal_impact_metrics` j
       ON LOWER(TRIM(f.journal_name)) = j.journal_name_normalized
-    ORDER BY f.rrf_score DESC
-    LIMIT in_top_k
+    QUALIFY ROW_NUMBER() OVER (ORDER BY f.rrf_score DESC) <= in_top_k
   )
   -- Stage 2: Selective Hydration of full article_text ONLY for the Top-K winners
   SELECT
@@ -177,7 +176,7 @@ BEGIN
       (SELECT * FROM status_filtered),
       'searchable_text',
       in_semantic_query,
-      top_k => GREATEST(in_top_k * 3, 30),
+      top_k => 40,
       mode => 'AUTO'
     )
   ),
@@ -234,6 +233,11 @@ BEGIN
   FROM semantic_trials s
   FULL OUTER JOIN lexical_trials l
     ON s.nct_id = l.nct_id
-  ORDER BY rrf_score DESC
-  LIMIT in_top_k;
+  QUALIFY ROW_NUMBER() OVER (
+    ORDER BY (
+      IF(s.sem_rank IS NOT NULL, 1.0 / (60 + s.sem_rank), 0.0)
+      + IF(l.lex_rank IS NOT NULL, 1.2 / (60 + l.lex_rank), 0.0)
+    ) DESC
+  ) <= in_top_k
+  ORDER BY rrf_score DESC;
 END;
